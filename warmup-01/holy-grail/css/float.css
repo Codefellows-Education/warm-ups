@@ -1,0 +1,50 @@
+@import url("reset.css");
+
+header{
+  background-color:lightskyblue;
+  color: white;
+  height: 2em;
+  line-height: 2em;
+  text-align:center;
+  width:100%;
+}
+
+#left{
+  background-color:teal;
+  color:white;
+  height: 20em;
+  line-height: 20em;
+  float:left;
+  text-align:center;
+  width:10%;
+}
+
+#content {
+  background-color:rgb(241, 168, 112);
+  color:white;
+  height: 20em;
+  line-height: 20em;
+  float:left;
+  text-align:center;
+  width:80%;
+}
+
+#right{
+  background-color:rgb(181, 226, 150);
+  color:white;
+  height: 20em;
+  line-height: 20em;
+  float:right;
+  text-align:center;
+  width:10%;
+}
+
+footer{
+  background-color:lightpink;
+  clear:both;
+  color: white;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  width: 100%;
+}

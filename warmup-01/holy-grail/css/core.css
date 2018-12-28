@@ -12,8 +12,8 @@ body > * {
 body > header, body > footer{
   background: #444;
   color: #eee;
-  height: 70px;
-  line-height: 70px;
+  height: 2em;
+  line-height: 2em;
   text-align: center;
 }
 
@@ -33,6 +33,3 @@ main > #right {
   background: #9c9009;
 }
 
-.centered {
-  
-}

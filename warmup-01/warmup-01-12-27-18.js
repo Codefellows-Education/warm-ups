@@ -23,31 +23,30 @@ function whileLoop(array){
 }
 
 // Implement .map(), .filter(), .reduce() as regular javascript functions that take in an array as a parameter, but do the same things as the real functions.
-function map(array){
+function map(array, action){
   let newArr = [];
   for(let i = 0; i<array.length; i++){
-    newArr.push(array[i]);
+    newArr.push(action(array[i]));
   }
   return newArr;
 }
 
-function filter(array){
+function filter(array, action){
   let newArr = [];
   for(let i = 0; i<array.length; i++){
-    if(array[i]){
+    if(action(array[i])){
       newArr.push(array[i]);
     }
   }
   return newArr;
 }
 
-function reduce(array){
-  let reducer =0;
-  let startingValue = 0;
+function reduce(array, reducer, startingValue){
+  let value;
   for(let i = 0; i < array.length; i++){
-    reducer = array[i] + startingValue;
+    value = reducer(startingValue, array[i], i, array);
   }
-  return reducer;
+  return value;
 }
 
 // Objects
@@ -70,20 +69,22 @@ const newStuff = {};
 let newState = {};
 
 // Using spread and destructuring assignment, create a new array called newPeople', which is a copy of the people` array, with a person named ‘Odie’ added to the beginning and one named ‘Garfield’ added to the end.
-let newPeople = ['Odie', rest, 'Garfield'];
+newPeople = ['Odie', ...people , 'Garfield'];
 
 // Using spread and destructuring assignment, create a new object called newStuff', which is a copy of the stuff object, with a new car added to the end of the cars` array within it
-let newStuff = {rest, cars:[rest, 'new Car'], rest};
+newStuff = {...stuff, cars:[...stuff.cars, 'new Car']};
 
 // Create a state object with keys of people and stuff that contain the people and stuff data.
-let state = {people: newPeople, stuff: newStuff};
+state = {people: newPeople, stuff: newStuff};
 
 // Do this using object destructuring assignment
-let people, stuff;
 [people, stuff] = [newPeople, newStuff];
-({people, stuff});
+state = {people: newPeople, stuff: newStuff};
 
 // Using spread and destructuring assignments, create a new object called newSate, repeating the newPeople and newStuff steps above but directly within the people and stuff nodes of the state object (don’t just spread in newPeople and newStuff)
-let newState = {newPeople:['Odie', rest, 'Garfield'], newStuff:{rest, cars:[rest, 'new Car']}};
+newState = {newPeople:['Odie', rest, 'Garfield'], newStuff:{rest, cars:[rest, 'new Car']}};
 
 // Prove that the original people, stuff, and state are unchanged.
+console.log(people);
+console.log(stuff);
+console.log(state);

@@ -9,35 +9,42 @@ header {
   width:100%;
 }
 
-main {
-  align-items: stretch;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  height: 20em;
-  line-height: 20em;
-  justify-content: center;
-}
+@media (min-width: 960px){
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 
-#left{
-  background-color:teal;
-  color:white;
-  text-align:center;
-  width:10%;
-}
+  main {
+    align-items: stretch;
+    display:flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-#content {
-  background-color:rgb(241, 168, 112);
-  color:white;
-  text-align:center;
-  width:80%;
-}
+  main > #left{
+    order: 1;
+    width:10%;
+  }
 
-#right{
-  background-color:rgb(181, 226, 150);
-  color:white;
-  text-align:center;
-  width:10%;
+  #content {
+    order: 2;
+    flex: 1;
+  }
+
+  #right{
+    order: 3;
+    width:10%;
+  }
+
+  .centered{
+    display:flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 footer{

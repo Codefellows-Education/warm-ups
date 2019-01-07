@@ -1,0 +1,51 @@
+@import url('reset.css');
+
+header{
+  background-color: red;
+  color: black;
+  height: 4em;
+  /* line-height: 4em; */
+  padding-top: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+header ul {
+  width: 50%;
+  height: 2em;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 1em;
+  color: white;
+  position: absolute;
+  top: 1em;
+}
+
+main > #content {
+  background-color: orange;
+  color: black;
+  text-align: center;
+}
+
+main > #right {
+  background-color: yellow;
+  color: black;
+  text-align: center;
+}
+
+main > #left {
+  background-color: green;
+  color: black;
+  text-align: center;
+}
+
+footer {
+  background-color: blue;
+  color: black;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  width: 100%;
+}

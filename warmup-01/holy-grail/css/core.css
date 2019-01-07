@@ -1,0 +1,35 @@
+@import url("reset.css");
+
+html body {
+  height: 100%;
+  width: 100%;
+}
+
+body > * {
+   border: 1px solid #111;
+}
+
+body > header, body > footer{
+  background: #444;
+  color: #eee;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+}
+
+main {
+  background: #fafafa;
+}
+
+main > #content {
+  background: #ccc;
+}
+
+main > #left {
+  background: purple;
+}
+
+main > #right {
+  background: #9c9009;
+}
+

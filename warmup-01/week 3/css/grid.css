@@ -1,0 +1,16 @@
+main{
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+}
+
+#left {
+  order: 1;
+}
+
+#content {
+  order: 2;
+}
+
+#right {
+  order: 3;
+}

@@ -1,0 +1,19 @@
+main{
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+}
+
+#left {
+  height: 50em;
+  order: 1;
+}
+
+#content {
+  height: 50em;
+  order: 2;
+}
+
+#right {
+  height: 50em;
+  order: 3;
+}

@@ -1,0 +1,23 @@
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#left {
+  order: 1;
+  height: 50em;
+  width: 10%;
+}
+
+#content {
+  order: 2;
+  height: 50em;
+  width: 80%;
+}
+
+#right {
+  order: 3;
+  height: 50em;
+  width: 10%;
+}

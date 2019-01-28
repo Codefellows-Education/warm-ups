@@ -1,0 +1,20 @@
+#content {
+  margin: auto;
+  width: 80%; 
+}
+
+#left {
+  float: left;
+  margin-top: -10em;
+  width: 10%;
+}
+
+#right{
+  float: right;
+  margin-top: -10em;
+  width: 10%;
+}
+
+footer{
+  clear:both;
+}

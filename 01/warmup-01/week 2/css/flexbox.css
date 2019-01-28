@@ -1,0 +1,19 @@
+main{
+  display: flex;
+  flex-direction: row
+}
+
+#left{
+  order: 1;
+  width: 20%;
+}
+
+#right{
+  order: 3;
+  width: 20%
+}
+
+#content{
+  order: 2;
+  width: 60%;
+}

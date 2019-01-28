@@ -1,0 +1,49 @@
+@import url('reset.css');
+
+* {
+  height: 100%;
+}
+
+header {
+  background-color: rgb(228, 125, 125);
+  height: 20%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+header nav {
+  padding-top: 2em;
+  width: 20%
+}
+
+header nav ul{
+  margin: auto;
+  width: 50%;
+}
+
+
+#content {
+  background-color: rgb(188, 228, 125);
+  text-align: center;
+}
+
+#right {
+  background-color: rgb(125, 228, 202);
+  text-align: center;
+}
+
+#left {
+  background-color: rgb(125, 173, 228);
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(182, 125, 228);
+  bottom: 0;
+  height: 20%;
+  position: fixed;
+  text-align: center;
+
+  width: 100%
+}

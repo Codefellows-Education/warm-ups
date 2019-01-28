@@ -1,0 +1,35 @@
+@import url('reset.css');
+
+header{
+  line-height: 2em;
+  background-color: rgb(74, 74, 247);
+  height: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+#content {
+  background-color: rgb(117, 57, 117);
+  line-height: 10em;
+  text-align: center;
+}
+
+#left {
+  background-color: rgb(247, 200, 112);
+  line-height: 10em;
+  text-align: center;
+}
+
+#right{
+  background-color: rgb(248, 248, 142);
+  line-height: 10em;
+  text-align: center;
+}
+
+footer{
+  background-color: rgb(54, 119, 54);
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  width: 100%;
+}

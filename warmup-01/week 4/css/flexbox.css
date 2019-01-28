@@ -1,0 +1,18 @@
+main{
+  display:flex;
+}
+
+#content {
+  order:2;
+  width: 80%;
+}
+
+#left {
+  order:1;
+  width:10%;
+}
+
+#right{
+  order:3;
+  width:10%;
+}
